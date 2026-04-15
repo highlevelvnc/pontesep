@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html lang="pt-PT" class="scroll-smooth">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pontes e Periferias | Remodelação Premium de Casas de Banho — Lisboa, Cascais, Mafra</title>
+<meta name="description" content="Remodelação integral de casas de banho e canalização técnica em Grande Lisboa, Cascais, Mafra e arredores. Acabamentos premium, rigor de engenharia e entregas no prazo. Peça orçamento grátis." />
+<meta name="keywords" content="remodelação casa de banho Lisboa, canalização Lisboa, remodelação WC Cascais, remodelação Mafra, picheleiro Lisboa, empresa de remodelação, renovação casa de banho premium" />
+<meta name="author" content="Pontes e Periferias LDA" />
+<meta name="robots" content="index, follow" />
+<meta property="og:title" content="Pontes e Periferias | Remodelação Premium de Casas de Banho" />
+<meta property="og:description" content="Remodelação integral e canalização técnica em Lisboa, Cascais e Mafra. Acabamentos premium com rigor de engenharia." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="pt_PT" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230B2A2F'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='serif' font-weight='700' font-size='18' fill='%23B8946A'%3EP%3C/text%3E%3C/svg%3E" />
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- GSAP + ScrollTrigger -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: {
+            DEFAULT: '#0B2A2F',
+            dark: '#061D20',
+            light: '#1A4147',
+            soft: '#2C5359'
+          },
+          gold: {
+            DEFAULT: '#B8946A',
+            light: '#D4B48A',
+            dark: '#8B6E4E'
+          },
+          cream: {
+            DEFAULT: '#F7F3ED',
+            2: '#EDE6DB',
+            3: '#E2D8C9'
+          },
+          muted: '#6B6B6B',
+        },
+        fontFamily: {
+          display: ['"Fraunces"', 'serif'],
+          sans: ['"Manrope"', 'system-ui', 'sans-serif'],
+        },
+        letterSpacing: {
+          'tightest': '-0.045em',
+          'tighter2': '-0.035em',
+        }
+      }
+    }
+  }
+</script>
+
+<style>
+  :root {
+    --ink: #0B2A2F;
+    --ink-dark: #061D20;
+    --gold: #B8946A;
+    --cream: #F7F3ED;
+  }
+  html, body { background: var(--cream); color: var(--ink); }
+  body { font-family: "Manrope", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  .font-display { font-family: "Fraunces", serif; font-optical-sizing: auto; }
+  ::selection { background: var(--ink); color: var(--cream); }
+
+  /* Eyebrow label */
+  .eyebrow {
+    font-family: "Manrope", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    font-size: 0.72rem;
+    font-weight: 600;
+  }
+
+  /* Glass nav */
+  .glass {
+    background: rgba(247, 243, 237, 0.72);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    border-bottom: 1px solid rgba(11, 42, 47, 0.06);
+  }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 0.95rem 1.7rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    border-radius: 2px;
+    transition: all .45s cubic-bezier(.2,.8,.2,1);
+    position: relative;
+    overflow: hidden;
+  }
+  .btn-primary {
+    background: var(--ink);
+    color: var(--cream);
+    box-shadow: 0 12px 30px -12px rgba(11, 42, 47, 0.4);
+  }
+  .btn-primary:hover {
+    background: var(--ink-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 18px 40px -12px rgba(11, 42, 47, 0.5);
+  }
+  .btn-ghost {
+    background: transparent;
+    color: var(--ink);
+    box-shadow: inset 0 0 0 1px rgba(11, 42, 47, 0.2);
+  }
+  .btn-ghost:hover {
+    background: var(--ink);
+    color: var(--cream);
+    box-shadow: inset 0 0 0 1px var(--ink);
+  }
+  .btn-gold {
+    background: var(--gold);
+    color: #fff;
+  }
+  .btn-gold:hover {
+    background: #A1825B;
+  }
+
+  .btn-wa {
+    background: #25D366;
+    color: #fff;
+    box-shadow: 0 12px 30px -12px rgba(37, 211, 102, 0.6);
+  }
+  .btn-wa:hover {
+    background: #1FB855;
+    transform: translateY(-2px);
+  }
+
+  /* Image utilities — crop out watermark on bottom */
+  .crop-watermark {
+    object-position: center top;
+    clip-path: inset(0 0 9% 0);
+    -webkit-clip-path: inset(0 0 9% 0);
+    transform: scale(1.1);
+  }
+  .crop-watermark-sm {
+    object-position: center top;
+    clip-path: inset(0 0 7% 0);
+    -webkit-clip-path: inset(0 0 7% 0);
+    transform: scale(1.07);
+  }
+
+  /* Divider */
+  .hairline {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(11, 42, 47, 0.15), transparent);
+  }
+
+  /* Hero background art */
+  .grid-lines {
+    background-image:
+      linear-gradient(to right, rgba(11, 42, 47, 0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(11, 42, 47, 0.04) 1px, transparent 1px);
+    background-size: 80px 80px;
+  }
+
+  /* Noise texture */
+  .noise {
+    position: absolute; inset: 0; pointer-events: none; opacity: 0.03;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  }
+
+  /* Card image hover */
+  .zoomable { overflow: hidden; }
+  .zoomable img { transition: transform 1.2s cubic-bezier(.19,1,.22,1); }
+  .zoomable:hover img { transform: scale(1.07); }
+
+  /* Portfolio overlay gradient */
+  .pf-overlay {
+    background: linear-gradient(180deg, rgba(11, 42, 47, 0) 40%, rgba(11, 42, 47, 0.88) 100%);
+  }
+
+  /* Reveal animation state */
+  .reveal, .reveal-stagger > * {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  .parallax-img { will-change: transform; }
+
+  /* Marquee */
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .marquee-track {
+    display: flex;
+    animation: marquee 38s linear infinite;
+    width: max-content;
+  }
+
+  /* Accordion */
+  details > summary { list-style: none; cursor: pointer; }
+  details > summary::-webkit-details-marker { display: none; }
+  details[open] .chev { transform: rotate(45deg); }
+  .chev { transition: transform .4s cubic-bezier(.2,.8,.2,1); }
+
+  /* Floating WhatsApp pulse */
+  @keyframes pulsering {
+    0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4); }
+    70% { box-shadow: 0 0 0 22px rgba(37, 211, 102, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+  }
+  .pulsering::before {
+    content: ''; position: absolute; inset: 0; border-radius: 9999px;
+    animation: pulsering 2.4s infinite;
+  }
+
+  /* Decorative number */
+  .ghost-num {
+    font-family: "Fraunces", serif;
+    font-weight: 300;
+    line-height: 0.9;
+    font-size: clamp(8rem, 14vw, 16rem);
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(11, 42, 47, 0.08);
+    letter-spacing: -0.06em;
+  }
+
+  /* Section label dot */
+  .dot { width: 6px; height: 6px; background: var(--gold); border-radius: 9999px; display: inline-block; }
+
+  /* Input */
+  .fld {
+    background: #fff;
+    border: 1px solid rgba(11, 42, 47, 0.12);
+    padding: 1rem 1.1rem;
+    font-size: 0.95rem;
+    transition: border-color .3s, box-shadow .3s;
+    border-radius: 2px;
+    width: 100%;
+    color: var(--ink);
+  }
+  .fld:focus {
+    outline: none;
+    border-color: var(--ink);
+    box-shadow: 0 0 0 3px rgba(11, 42, 47, 0.08);
+  }
+  .fld-lbl {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+
+  /* Smooth scroll fallback */
+  html { scroll-behavior: smooth; }
+
+  /* Hide scrollbar but allow scroll in marquee */
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+  /* Custom underline link */
+  .link-u {
+    position: relative;
+    display: inline-block;
+  }
+  .link-u::after {
+    content: '';
+    position: absolute;
+    left: 0; right: 0; bottom: -4px;
+    height: 1px;
+    background: currentColor;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s cubic-bezier(.2,.8,.2,1);
+  }
+  .link-u:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+</style>
+</head>
+
+<body class="bg-cream text-ink overflow-x-hidden">
+
+<!-- ============================= TOP BAR ============================= -->
+<div class="hidden md:block bg-ink text-cream/80 text-xs tracking-wide">
+  <div class="max-w-[1400px] mx-auto px-6 lg:px-10 h-10 flex items-center justify-between">
+    <div class="flex items-center gap-6">
+      <span class="flex items-center gap-2">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-7-7-12a7 7 0 1 1 14 0c0 5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        Grande Lisboa · Cascais · Mafra · Oeiras · Sintra
+      </span>
+      <span class="flex items-center gap-2 opacity-80">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        Seg a Sáb · 08:30 — 19:00
+      </span>
+    </div>
+    <div class="flex items-center gap-6">
+      <a href="tel:+351912345678" class="link-u opacity-90 hover:opacity-100">+351 912 345 678</a>
+      <a href="mailto:geral@ponteseperiferias.pt" class="link-u opacity-90 hover:opacity-100">geral@ponteseperiferias.pt</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============================= NAVIGATION ============================= -->
+<nav id="nav" class="fixed top-0 md:top-10 left-0 right-0 z-50 glass transition-all duration-500">
+  <div class="max-w-[1400px] mx-auto px-6 lg:px-10 h-[72px] flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-3 group">
+      <span class="w-10 h-10 bg-ink text-cream font-display italic text-xl font-semibold flex items-center justify-center rounded-sm">P</span>
+      <span class="leading-none">
+        <span class="block font-display text-[1.05rem] font-semibold tracking-tight text-ink">Pontes <span class="italic font-light">&amp;</span> Periferias</span>
+        <span class="block text-[0.66rem] uppercase tracking-[0.22em] text-muted mt-1">Remodelação · Canalização</span>
+      </span>
+    </a>
+    <div class="hidden lg:flex items-center gap-10 text-[0.92rem]">
+      <a href="#servicos" class="link-u text-ink/80 hover:text-ink transition">Serviços</a>
+      <a href="#portfolio" class="link-u text-ink/80 hover:text-ink transition">Portfólio</a>
+      <a href="#processo" class="link-u text-ink/80 hover:text-ink transition">Processo</a>
+      <a href="#zona" class="link-u text-ink/80 hover:text-ink transition">Zona de Actuação</a>
+      <a href="#contacto" class="link-u text-ink/80 hover:text-ink transition">Contacto</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="https://wa.me/351912345678?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20um%20or%C3%A7amento%20de%20remodela%C3%A7%C3%A3o%20de%20casa%20de%20banho." target="_blank" rel="noopener" class="hidden sm:inline-flex btn btn-wa !py-2.5 !px-4 text-[0.85rem]">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15s-.77.97-.95 1.17c-.17.2-.35.22-.65.07-.3-.15-1.26-.47-2.4-1.49-.89-.8-1.49-1.78-1.66-2.08-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37s-1.04 1.01-1.04 2.47 1.06 2.87 1.21 3.07c.15.2 2.09 3.2 5.06 4.49.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35zM12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.03-.2-.31a8.18 8.18 0 0 1-1.26-4.39c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.17 8.17 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.25 8.24z"/></svg>
+        WhatsApp
+      </a>
+      <a href="#contacto" class="btn btn-primary !py-2.5 !px-5 text-[0.85rem]">
+        Pedir Orçamento
+      </a>
+      <button id="menuBtn" class="lg:hidden p-2 -mr-2" aria-label="Abrir menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="lg:hidden hidden bg-cream border-t border-ink/10">
+    <div class="px-6 py-6 flex flex-col gap-1 text-lg">
+      <a href="#servicos" class="py-3 border-b border-ink/5">Serviços</a>
+      <a href="#portfolio" class="py-3 border-b border-ink/5">Portfólio</a>
+      <a href="#processo" class="py-3 border-b border-ink/5">Processo</a>
+      <a href="#zona" class="py-3 border-b border-ink/5">Zona de Actuação</a>
+      <a href="#contacto" class="py-3">Contacto</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================= HERO ============================= -->
+<section id="top" class="relative pt-32 md:pt-36 pb-16 md:pb-24 overflow-hidden">
+  <div class="absolute inset-0 grid-lines opacity-50 pointer-events-none"></div>
+  <div class="absolute top-0 right-0 w-[48%] h-full bg-cream-2 -z-10 hidden lg:block"></div>
+
+  <div class="max-w-[1400px] mx-auto px-6 lg:px-10 relative">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+
+      <!-- Text -->
+      <div class="lg:col-span-7 relative z-10">
+        <div class="reveal flex items-center gap-3 mb-8">
+          <span class="dot"></span>
+          <span class="eyebrow text-gold-dark">Pontes &amp; Periferias · Desde 2009</span>
+        </div>
+
+        <h1 class="reveal font-display font-light text-[2.6rem] sm:text-6xl lg:text-[5.2rem] xl:text-[6rem] leading-[0.98] tracking-tightest text-ink mb-10">
+          Casas de banho<br/>
+          com <span class="italic font-normal text-gold">acabamento</span><br/>
+          de autor.
+        </h1>
+
+        <p class="reveal text-[1.08rem] md:text-xl text-ink/70 max-w-2xl leading-relaxed mb-10">
+          Remodelamos WCs e substituímos canalizações em Lisboa, Cascais e Mafra com o rigor de quem constrói para durar — e o olhar de quem projecta para se viver.
+        </p>
+
+        <div class="reveal flex flex-col sm:flex-row gap-3 mb-14">
+          <a href="#contacto" class="btn btn-primary text-[0.95rem]">
+            Pedir orçamento grátis
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#portfolio" class="btn btn-ghost text-[0.95rem]">
+            Ver projectos
+          </a>
+        </div>
+
+        <!-- Trust stats -->
+        <div class="reveal grid grid-cols-3 gap-4 sm:gap-8 max-w-xl pt-8 border-t border-ink/10">
+          <div>
+            <div class="font-display text-4xl font-light text-ink leading-none mb-2" data-count="15">0</div>
+            <div class="text-xs uppercase tracking-[0.2em] text-muted font-medium leading-snug">Anos<br/>de ofício</div>
+          </div>
+          <div>
+            <div class="font-display text-4xl font-light text-ink leading-none mb-2" data-count="320">0</div>
+            <div class="text-xs uppercase tracking-[0.2em] text-muted font-medium leading-snug">Obras<br/>concluídas</div>
+          </div>
+          <div>
+            <div class="font-display text-4xl font-light text-ink leading-none mb-2">24<span class="text-gold">h</span></div>
+            <div class="text-xs uppercase tracking-[0.2em] text-muted font-medium leading-snug">Resposta<br/>ao pedido</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="lg:col-span-5 relative">
+        <div class="relative">
+          <!-- Eyebrow vertical -->
+          <span class="hidden md:block absolute -left-10 top-12 eyebrow text-ink/60 -rotate-90 origin-top-left whitespace-nowrap">Suite privada · Lisboa 2024</span>
+
+          <div class="relative aspect-[4/5] overflow-hidden zoomable shadow-[0_40px_80px_-30px_rgba(11,42,47,0.35)] rounded-[2px]">
+            <img src="images/hero.jpeg" alt="Casa de banho moderna em mármore branco, sanita e bidé suspensos com duche de vidro preto — projecto Pontes e Periferias em Lisboa" class="w-full h-full object-cover crop-watermark parallax-img" />
+            <!-- Top-right badge -->
+            <div class="absolute top-6 right-6 bg-cream/90 backdrop-blur-sm px-4 py-2 text-[0.68rem] uppercase tracking-[0.22em] font-semibold text-ink">
+              Obra entregue 2024
+            </div>
+          </div>
+
+          <!-- Floating card bottom-left -->
+          <div class="hidden md:block absolute -bottom-8 -left-8 bg-ink text-cream p-7 max-w-[240px] rounded-[2px] shadow-[0_30px_60px_-20px_rgba(11,42,47,0.5)]">
+            <div class="flex items-center gap-1 text-gold mb-3">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
+            <p class="font-display italic text-[1.15rem] font-light leading-tight mb-3">“Trabalho impecável do princípio ao fim.”</p>
+            <div class="text-[0.7rem] uppercase tracking-[0.2em] text-cream/60">Cliente — Cascais</div>
+          </div>
+
+          <!-- Right vertical accent -->
+          <div class="hidden lg:block absolute -right-6 top-1/2 -translate-y-1/2 w-[2px] h-32 bg-gold"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-4 left-1/2 -translate-x-1/2 hidden lg:flex flex-col items-center gap-2 text-ink/40">
+    <span class="eyebrow">Scroll</span>
+    <div class="w-[1px] h-10 bg-ink/20 relative overflow-hidden">
+      <div class="absolute top-0 w-full h-4 bg-ink animate-[scrolldown_2s_infinite]"></div>
+    </div>
+  </div>
+  <style>@keyframes scrolldown { 0% { transform: translateY(-100%); } 100% { transform: translateY(400%); } }</style>
+</section>
+
+<!-- ============================= MARQUEE / LOGOS ============================= -->
+<section class="py-10 border-y border-ink/8 bg-cream overflow-hidden">
+  <div class="marquee-track gap-16 items-center">
+    <!-- First set -->
+    <span class="font-display italic text-2xl font-light text-ink/60 whitespace-nowrap">Rigor técnico</span>
+    <span class="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0"></span>
+    <span class="font-display italic text-2xl font-light text-ink/60 whitespace-nowrap">Acabamento premium</span>
+    <span class="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0"></span>
+    <span class="font-display italic text-2xl font-light text-ink/60 whitespace-nowrap">Prazos cumpridos</span>
+    <span class="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0"></span>
+    <span class="font-display italic text-2xl font-light text-ink/60 whitespace-nowrap">Canalização certificada</span>
+    <span class="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0"></span>
+    <span class="font-display italic text-2xl font-light text-ink/60 whitespace-nowrap">Garantia de obra</span>
+    <span class="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0"></span>
+    <span class="font-display italic text-2xl font-light text-ink/60 whitespace-nowrap">Mármore &amp; microcimento</span>
+    <span class="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0"></span>
+    <!-- Dup -->
+    <span class="font-display italic text-2xl font-light text-ink/60 whitespace-nowrap">Rigor técnico</span>
+    <span class="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0"></span>
+    <span class="font-display italic text-2xl font-light text-ink/60 whitespace-nowrap">Acabamento premium</span>
+    <span class="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0"></span>
+    <span class="font-display italic text-2xl font-light text-ink/60 whitespace-nowrap">Prazos cumpridos</span>
+    <span class="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0"></span>
+    <span class="font-display italic text-2xl font-light text-ink/60 whitespace-nowrap">Canalização certificada</span>
+    <span class="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0"></span>
+    <span class="font-display italic text-2xl font-light text-ink/60 whitespace-nowrap">Garantia de obra</span>
+    <span class="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0"></span>
+    <span class="font-display italic text-2xl font-light text-ink/60 whitespace-nowrap">Mármore &amp; microcimento</span>
+    <span class="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0"></span>
+  </div>
+</section>
+
+<!-- ============================= MANIFESTO / SOBRE ============================= -->
+<section class="py-28 md:py-40 bg-cream relative overflow-hidden">
+  <div class="max-w-[1400px] mx-auto px-6 lg:px-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-14 lg:gap-20 items-center">
+
+      <!-- Image block -->
+      <div class="lg:col-span-6 relative order-2 lg:order-1">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="col-span-2 aspect-[16/10] overflow-hidden zoomable relative">
+            <img src="images/port-02.jpeg" alt="Duche com vidro preto e parede em mármore branco" class="w-full h-full object-cover crop-watermark-sm parallax-img" />
+          </div>
+          <div class="aspect-[4/5] overflow-hidden zoomable">
+            <img src="images/port-01.jpeg" alt="Canto de duche em mármore com nicho preto" class="w-full h-full object-cover crop-watermark-sm parallax-img" />
+          </div>
+          <div class="aspect-[4/5] overflow-hidden zoomable mt-8">
+            <img src="images/detail-01.jpeg" alt="Detalhe de aplicação de cerâmico em parede" class="w-full h-full object-cover crop-watermark-sm parallax-img" />
+          </div>
+        </div>
+
+        <!-- Ghost number -->
+        <div class="absolute -top-20 -left-8 ghost-num hidden md:block">01</div>
+      </div>
+
+      <!-- Text -->
+      <div class="lg:col-span-6 order-1 lg:order-2 relative">
+        <div class="reveal flex items-center gap-3 mb-8">
+          <span class="dot"></span>
+          <span class="eyebrow text-ink/60">A nossa filosofia</span>
+        </div>
+
+        <h2 class="reveal font-display font-light text-4xl md:text-5xl lg:text-[3.6rem] leading-[1.05] tracking-tighter2 mb-10">
+          O luxo não se vê.<br/>
+          <span class="italic font-normal">Sente-se</span> quando<br/>
+          a obra acaba.
+        </h2>
+
+        <div class="space-y-6 text-ink/75 text-[1.05rem] leading-relaxed max-w-xl mb-10">
+          <p class="reveal">
+            Somos uma equipa técnica especializada em transformar casas de banho — da primeira picaretada à última junta de silicone. Trabalhamos com rigor de engenharia hidráulica e olhar de arquitectura de interiores.
+          </p>
+          <p class="reveal">
+            Cada obra é dirigida por um responsável único que acompanha desde a medição até à entrega. Sem subempreitadas anónimas. Sem surpresas no orçamento.
+          </p>
+        </div>
+
+        <div class="reveal grid grid-cols-2 gap-6 max-w-lg">
+          <div class="border-t border-ink/15 pt-4">
+            <div class="eyebrow text-gold-dark mb-2">Garantia</div>
+            <p class="text-sm text-ink/75">2 anos de garantia escrita em todos os trabalhos de canalização.</p>
+          </div>
+          <div class="border-t border-ink/15 pt-4">
+            <div class="eyebrow text-gold-dark mb-2">Equipa própria</div>
+            <p class="text-sm text-ink/75">Técnicos fixos, contratados e formados pela casa.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= SERVIÇOS ============================= -->
+<section id="servicos" class="py-28 md:py-40 bg-ink text-cream relative overflow-hidden">
+  <div class="noise"></div>
+
+  <div class="max-w-[1400px] mx-auto px-6 lg:px-10 relative">
+    <div class="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-10 mb-20">
+      <div class="max-w-2xl">
+        <div class="reveal flex items-center gap-3 mb-8">
+          <span class="dot"></span>
+          <span class="eyebrow text-gold">Serviços</span>
+        </div>
+        <h2 class="reveal font-display font-light text-4xl md:text-5xl lg:text-[3.6rem] leading-[1.05] tracking-tighter2">
+          Uma obra completa,<br/>
+          <span class="italic font-normal">sem intermediários.</span>
+        </h2>
+      </div>
+      <p class="reveal max-w-md text-cream/70 text-[1.02rem] leading-relaxed">
+        Da canalização escondida dentro da parede aos acabamentos à vista — tratamos de tudo com uma só equipa e um só interlocutor.
+      </p>
+    </div>
+
+    <!-- Services grid -->
+    <div class="reveal-stagger grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-ink-light/30">
+
+      <!-- 1 -->
+      <div class="bg-ink p-10 md:p-12 hover:bg-ink-dark transition-colors duration-700 group relative">
+        <div class="flex items-start justify-between mb-10">
+          <div class="w-14 h-14 bg-cream/5 border border-cream/10 flex items-center justify-center group-hover:bg-gold group-hover:border-gold transition-all duration-500">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21V7l9-4 9 4v14"/><path d="M9 21V12h6v9"/></svg>
+          </div>
+          <span class="eyebrow text-gold">01</span>
+        </div>
+        <h3 class="font-display font-normal text-[1.6rem] mb-4 leading-tight">Remodelação integral</h3>
+        <p class="text-cream/65 text-[0.97rem] leading-relaxed mb-8">Projecto chave-na-mão: demolição, alvenaria, canalização, eléctrica, revestimentos e loiças. Um só responsável do início ao fim.</p>
+        <div class="hairline mb-6 opacity-40"></div>
+        <ul class="text-[0.85rem] text-cream/55 space-y-2">
+          <li>· Gestão de obra diária</li>
+          <li>· Planta técnica incluída</li>
+          <li>· Limpeza final e entrega</li>
+        </ul>
+      </div>
+
+      <!-- 2 -->
+      <div class="bg-ink p-10 md:p-12 hover:bg-ink-dark transition-colors duration-700 group relative">
+        <div class="flex items-start justify-between mb-10">
+          <div class="w-14 h-14 bg-cream/5 border border-cream/10 flex items-center justify-center group-hover:bg-gold group-hover:border-gold transition-all duration-500">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 22V10a2 2 0 0 1 2-2h4V6a2 2 0 0 1 2-2h2"/><path d="M14 4h6v6"/><path d="M14 22v-6h6v6"/><path d="M10 14H4"/></svg>
+          </div>
+          <span class="eyebrow text-gold">02</span>
+        </div>
+        <h3 class="font-display font-normal text-[1.6rem] mb-4 leading-tight">Canalização técnica</h3>
+        <p class="text-cream/65 text-[0.97rem] leading-relaxed mb-8">Substituição de colunas, redes de águas quentes e frias, esgotos e pressurizadores. Materiais certificados e testes de pressão documentados.</p>
+        <div class="hairline mb-6 opacity-40"></div>
+        <ul class="text-[0.85rem] text-cream/55 space-y-2">
+          <li>· PEX &amp; multicamada</li>
+          <li>· Detecção de fugas</li>
+          <li>· Relatório técnico final</li>
+        </ul>
+      </div>
+
+      <!-- 3 -->
+      <div class="bg-ink p-10 md:p-12 hover:bg-ink-dark transition-colors duration-700 group relative">
+        <div class="flex items-start justify-between mb-10">
+          <div class="w-14 h-14 bg-cream/5 border border-cream/10 flex items-center justify-center group-hover:bg-gold group-hover:border-gold transition-all duration-500">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v6M12 22v-4M4 12H2M22 12h-2M6 6l-1.5-1.5M19.5 19.5 18 18M6 18l-1.5 1.5M19.5 4.5 18 6"/><circle cx="12" cy="12" r="4"/></svg>
+          </div>
+          <span class="eyebrow text-gold">03</span>
+        </div>
+        <h3 class="font-display font-normal text-[1.6rem] mb-4 leading-tight">Bases &amp; resguardos</h3>
+        <p class="text-cream/65 text-[0.97rem] leading-relaxed mb-8">Bases de duche à face do pavimento, poliban em pedra ou resina e vidros temperados feitos à medida — fixações ocultas e selagem perfeita.</p>
+        <div class="hairline mb-6 opacity-40"></div>
+        <ul class="text-[0.85rem] text-cream/55 space-y-2">
+          <li>· Impermeabilização multi-camada</li>
+          <li>· Vidro 8 mm temperado</li>
+          <li>· Perfis minimalistas</li>
+        </ul>
+      </div>
+
+      <!-- 4 -->
+      <div class="bg-ink p-10 md:p-12 hover:bg-ink-dark transition-colors duration-700 group relative">
+        <div class="flex items-start justify-between mb-10">
+          <div class="w-14 h-14 bg-cream/5 border border-cream/10 flex items-center justify-center group-hover:bg-gold group-hover:border-gold transition-all duration-500">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg>
+          </div>
+          <span class="eyebrow text-gold">04</span>
+        </div>
+        <h3 class="font-display font-normal text-[1.6rem] mb-4 leading-tight">Revestimentos premium</h3>
+        <p class="text-cream/65 text-[0.97rem] leading-relaxed mb-8">Aplicação de cerâmicos de grande formato, mármore, microcimento e pedras naturais — cortes milimétricos e juntas alinhadas.</p>
+        <div class="hairline mb-6 opacity-40"></div>
+        <ul class="text-[0.85rem] text-cream/55 space-y-2">
+          <li>· Grés porcelânico 120×60</li>
+          <li>· Microcimento contínuo</li>
+          <li>· Juntas epóxi premium</li>
+        </ul>
+      </div>
+
+      <!-- 5 -->
+      <div class="bg-ink p-10 md:p-12 hover:bg-ink-dark transition-colors duration-700 group relative">
+        <div class="flex items-start justify-between mb-10">
+          <div class="w-14 h-14 bg-cream/5 border border-cream/10 flex items-center justify-center group-hover:bg-gold group-hover:border-gold transition-all duration-500">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-8h6v8"/><path d="M12 9v.01"/></svg>
+          </div>
+          <span class="eyebrow text-gold">05</span>
+        </div>
+        <h3 class="font-display font-normal text-[1.6rem] mb-4 leading-tight">Substituição de loiças</h3>
+        <p class="text-cream/65 text-[0.97rem] leading-relaxed mb-8">Sanitários suspensos, autoclismos encastrados, torneiras de embutir e mobiliário de banho — instalação e acabamento de nível premium.</p>
+        <div class="hairline mb-6 opacity-40"></div>
+        <ul class="text-[0.85rem] text-cream/55 space-y-2">
+          <li>· Marcas Roca, Sanindusa, Geberit</li>
+          <li>· Torneiras pretas, douradas ou cromadas</li>
+          <li>· Móveis suspensos à medida</li>
+        </ul>
+      </div>
+
+      <!-- 6 -->
+      <div class="bg-ink p-10 md:p-12 hover:bg-ink-dark transition-colors duration-700 group relative">
+        <div class="flex items-start justify-between mb-10">
+          <div class="w-14 h-14 bg-cream/5 border border-cream/10 flex items-center justify-center group-hover:bg-gold group-hover:border-gold transition-all duration-500">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+          </div>
+          <span class="eyebrow text-gold">06</span>
+        </div>
+        <h3 class="font-display font-normal text-[1.6rem] mb-4 leading-tight">Espaços pequenos</h3>
+        <p class="text-cream/65 text-[0.97rem] leading-relaxed mb-8">Optimização inteligente de casas de banho de serviço e meias-casas de banho — soluções compactas que triplicam a sensação de espaço.</p>
+        <div class="hairline mb-6 opacity-40"></div>
+        <ul class="text-[0.85rem] text-cream/55 space-y-2">
+          <li>· Lavatórios suspensos estreitos</li>
+          <li>· Duches walk-in</li>
+          <li>· Armazenamento invisível</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="reveal mt-16 flex flex-col md:flex-row items-center justify-between gap-6 pt-10 border-t border-cream/10">
+      <p class="text-cream/80 font-display italic text-[1.3rem] md:text-2xl max-w-2xl leading-snug">
+        Não encontra exactamente o que procura? Falamos sobre o seu projecto sem compromisso.
+      </p>
+      <a href="#contacto" class="btn btn-gold text-[0.95rem] flex-shrink-0">
+        Falar sobre o projecto
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= PORTFÓLIO (BENTO) ============================= -->
+<section id="portfolio" class="py-28 md:py-40 bg-cream-2 relative overflow-hidden">
+  <div class="max-w-[1400px] mx-auto px-6 lg:px-10">
+
+    <div class="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-10 mb-20">
+      <div>
+        <div class="reveal flex items-center gap-3 mb-8">
+          <span class="dot"></span>
+          <span class="eyebrow text-ink/60">Portfólio seleccionado</span>
+        </div>
+        <h2 class="reveal font-display font-light text-4xl md:text-5xl lg:text-[3.6rem] leading-[1.05] tracking-tighter2 max-w-3xl">
+          Obras recentes em <span class="italic font-normal">casa</span><br/>
+          dos nossos clientes.
+        </h2>
+      </div>
+      <div class="reveal flex items-center gap-4 text-ink/60">
+        <span class="eyebrow">Lisboa · Cascais · Mafra</span>
+      </div>
+    </div>
+
+    <!-- Bento grid -->
+    <div class="grid grid-cols-2 md:grid-cols-6 grid-flow-dense gap-4 md:gap-6 reveal-stagger">
+
+      <!-- Item 1 (big) -->
+      <figure class="group relative col-span-2 md:col-span-3 md:row-span-2 aspect-square overflow-hidden zoomable">
+        <img src="images/port-04.jpeg" alt="Suite completa em Lisboa — mármore branco e lacado preto" class="w-full h-full object-cover crop-watermark-sm" />
+        <div class="absolute inset-0 pf-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex flex-col justify-end p-8 md:p-10 text-cream">
+          <div class="eyebrow text-gold-light mb-2">Lisboa · 2024</div>
+          <h3 class="font-display text-2xl md:text-3xl font-light leading-tight">Suite Master — Mármore &amp; Sombra</h3>
+        </div>
+        <div class="absolute top-5 left-5 w-10 h-10 bg-cream/90 text-ink flex items-center justify-center text-xs font-semibold">01</div>
+      </figure>
+
+      <!-- Item 2 -->
+      <figure class="group relative col-span-1 md:col-span-3 aspect-[3/2] overflow-hidden zoomable">
+        <img src="images/port-02.jpeg" alt="Duche com vidro preto em mármore" class="w-full h-full object-cover crop-watermark-sm" />
+        <div class="absolute inset-0 pf-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex flex-col justify-end p-6 text-cream">
+          <div class="eyebrow text-gold-light mb-2">Cascais · 2024</div>
+          <h3 class="font-display text-xl md:text-2xl font-light leading-tight">Duche Vidro Preto</h3>
+        </div>
+      </figure>
+
+      <!-- Item 3 -->
+      <figure class="group relative col-span-1 md:col-span-2 aspect-[3/4] overflow-hidden zoomable">
+        <img src="images/port-01.jpeg" alt="Canto de duche com nicho preto" class="w-full h-full object-cover crop-watermark-sm" />
+        <div class="absolute inset-0 pf-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex flex-col justify-end p-6 text-cream">
+          <div class="eyebrow text-gold-light mb-2">Mafra</div>
+          <h3 class="font-display text-xl font-light leading-tight">Nicho &amp; Base Negra</h3>
+        </div>
+      </figure>
+
+      <!-- Item 4 -->
+      <figure class="group relative col-span-2 md:col-span-2 aspect-[4/3] overflow-hidden zoomable">
+        <img src="images/port-05.jpeg" alt="Teto em mármore com espelho LED" class="w-full h-full object-cover crop-watermark-sm" />
+        <div class="absolute inset-0 pf-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex flex-col justify-end p-6 text-cream">
+          <div class="eyebrow text-gold-light mb-2">Estoril</div>
+          <h3 class="font-display text-xl md:text-2xl font-light leading-tight">Espelho LED &amp; Mármore Contínuo</h3>
+        </div>
+      </figure>
+
+      <!-- Item 5 -->
+      <figure class="group relative col-span-2 md:col-span-2 aspect-[4/3] overflow-hidden zoomable">
+        <img src="images/port-06.jpeg" alt="WC amplo em tons bege com mosaico" class="w-full h-full object-cover crop-watermark-sm" />
+        <div class="absolute inset-0 pf-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex flex-col justify-end p-6 text-cream">
+          <div class="eyebrow text-gold-light mb-2">Oeiras</div>
+          <h3 class="font-display text-xl md:text-2xl font-light leading-tight">Tons Terra &amp; Mosaico</h3>
+        </div>
+      </figure>
+
+      <!-- Item 6 -->
+      <figure class="group relative col-span-1 md:col-span-2 aspect-square overflow-hidden zoomable">
+        <img src="images/port-03.jpeg" alt="Duche em mármore com porta em madeira" class="w-full h-full object-cover crop-watermark-sm" />
+        <div class="absolute inset-0 pf-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex flex-col justify-end p-6 text-cream">
+          <div class="eyebrow text-gold-light mb-2">Ericeira</div>
+          <h3 class="font-display text-xl font-light leading-tight">Clássico Contemporâneo</h3>
+        </div>
+      </figure>
+
+      <!-- Item 7 -->
+      <figure class="group relative col-span-1 md:col-span-2 aspect-[3/4] overflow-hidden zoomable">
+        <img src="images/port-07.jpeg" alt="Duche interior com mosaico geométrico" class="w-full h-full object-cover crop-watermark-sm" />
+        <div class="absolute inset-0 pf-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex flex-col justify-end p-6 text-cream">
+          <div class="eyebrow text-gold-light mb-2">Sintra</div>
+          <h3 class="font-display text-xl font-light leading-tight">Duche Walk-in</h3>
+        </div>
+      </figure>
+
+      <!-- Item 8 -->
+      <figure class="group relative col-span-2 md:col-span-2 aspect-[4/3] overflow-hidden zoomable">
+        <img src="images/port-08.jpeg" alt="Sanita e bidé brancos com mosaico" class="w-full h-full object-cover crop-watermark-sm" />
+        <div class="absolute inset-0 pf-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex flex-col justify-end p-6 text-cream">
+          <div class="eyebrow text-gold-light mb-2">Algés</div>
+          <h3 class="font-display text-xl md:text-2xl font-light leading-tight">Geometria em Mosaico</h3>
+        </div>
+      </figure>
+
+      <!-- Item 9 (big wide) -->
+      <figure class="group relative col-span-2 md:col-span-6 aspect-[16/7] md:aspect-[21/7] overflow-hidden zoomable">
+        <img src="images/port-09.jpeg" alt="Suite ampla com duche e espelho panorâmico" class="w-full h-full object-cover crop-watermark-sm" />
+        <div class="absolute inset-0 pf-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex flex-col justify-end p-8 md:p-12 text-cream">
+          <div class="eyebrow text-gold-light mb-2">Lisboa · Projecto Panorâmico</div>
+          <h3 class="font-display text-2xl md:text-4xl font-light leading-tight max-w-2xl">Amplitude, luz e superfícies reflectivas</h3>
+        </div>
+        <div class="absolute top-5 left-5 w-10 h-10 bg-cream/90 text-ink flex items-center justify-center text-xs font-semibold">09</div>
+      </figure>
+
+    </div>
+
+    <div class="reveal mt-14 flex justify-center">
+      <a href="#contacto" class="inline-flex items-center gap-3 text-ink link-u font-medium">
+        Solicitar dossier completo de obras
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= ANTES / DEPOIS ============================= -->
+<section class="py-28 md:py-40 bg-cream relative overflow-hidden">
+  <div class="max-w-[1400px] mx-auto px-6 lg:px-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+      <div class="lg:col-span-5">
+        <div class="reveal flex items-center gap-3 mb-8">
+          <span class="dot"></span>
+          <span class="eyebrow text-ink/60">Antes · Depois</span>
+        </div>
+        <h2 class="reveal font-display font-light text-4xl md:text-5xl lg:text-[3.3rem] leading-[1.05] tracking-tighter2 mb-8">
+          A diferença está <span class="italic font-normal">entre paredes</span>.
+        </h2>
+        <p class="reveal text-ink/75 text-[1.05rem] leading-relaxed mb-10 max-w-lg">
+          A maior parte do trabalho de uma boa remodelação é invisível. Tubagens novas, impermeabilização de raiz, alvenaria rectificada — é aí que se decide se a casa de banho vai durar 5 ou 25 anos.
+        </p>
+        <ul class="reveal space-y-5 mb-10">
+          <li class="flex items-start gap-4">
+            <div class="w-8 h-8 bg-gold/15 text-gold-dark flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+            </div>
+            <div>
+              <div class="font-semibold text-ink mb-1">Demolição cirúrgica</div>
+              <p class="text-sm text-ink/65 leading-relaxed">Com protecção integral de paredes, pavimentos e mobiliário vizinho.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <div class="w-8 h-8 bg-gold/15 text-gold-dark flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+            </div>
+            <div>
+              <div class="font-semibold text-ink mb-1">Redes substituídas de raiz</div>
+              <p class="text-sm text-ink/65 leading-relaxed">Águas, esgotos e electricidade novos — não se remenda o que é para durar décadas.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <div class="w-8 h-8 bg-gold/15 text-gold-dark flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+            </div>
+            <div>
+              <div class="font-semibold text-ink mb-1">Impermeabilização certificada</div>
+              <p class="text-sm text-ink/65 leading-relaxed">Membranas líquidas e bandas técnicas em toda a zona húmida antes do revestimento.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="lg:col-span-7">
+        <div class="grid grid-cols-2 gap-4 md:gap-6 relative">
+          <div class="relative group">
+            <div class="aspect-[3/4] overflow-hidden zoomable bg-ink/5">
+              <img src="images/antes-01.jpeg" alt="Casa de banho em estado original antes da remodelação" class="w-full h-full object-cover" />
+            </div>
+            <div class="absolute bottom-4 left-4 bg-cream text-ink eyebrow px-3 py-2">Antes</div>
+          </div>
+          <div class="relative group mt-10 md:mt-16">
+            <div class="aspect-[3/4] overflow-hidden zoomable">
+              <img src="images/port-04.jpeg" alt="Casa de banho concluída em mármore branco" class="w-full h-full object-cover crop-watermark-sm" />
+            </div>
+            <div class="absolute bottom-4 left-4 bg-ink text-cream eyebrow px-3 py-2">Depois</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= PROCESSO ============================= -->
+<section id="processo" class="py-28 md:py-40 bg-cream-2 relative overflow-hidden">
+  <div class="max-w-[1400px] mx-auto px-6 lg:px-10">
+
+    <div class="flex flex-col md:items-center text-center max-w-3xl mx-auto mb-20">
+      <div class="reveal flex items-center gap-3 mb-8 justify-center">
+        <span class="dot"></span>
+        <span class="eyebrow text-ink/60">Processo</span>
+      </div>
+      <h2 class="reveal font-display font-light text-4xl md:text-5xl lg:text-[3.6rem] leading-[1.05] tracking-tighter2">
+        Cinco passos.<br/>
+        <span class="italic font-normal">Nenhuma surpresa.</span>
+      </h2>
+      <p class="reveal text-ink/70 mt-8 text-[1.05rem] leading-relaxed max-w-xl">
+        Um método simples e transparente, refinado em mais de 300 obras — para que saiba exactamente em que fase está a sua casa de banho, todos os dias.
+      </p>
+    </div>
+
+    <!-- Timeline -->
+    <div class="relative">
+      <!-- Gold line -->
+      <div class="hidden lg:block absolute top-10 left-[10%] right-[10%] h-[1px] bg-gradient-to-r from-transparent via-gold/50 to-transparent"></div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-6 relative">
+        <!-- Step 1 -->
+        <div class="reveal text-center relative">
+          <div class="w-20 h-20 bg-cream border border-ink/15 rounded-full flex items-center justify-center mx-auto mb-6 font-display italic text-2xl text-gold relative z-10">01</div>
+          <h4 class="font-display text-xl font-normal text-ink mb-3">Contacto</h4>
+          <p class="text-sm text-ink/65 leading-relaxed max-w-[220px] mx-auto">Pedido inicial por telefone, WhatsApp ou formulário. Resposta garantida em 24h úteis.</p>
+        </div>
+        <!-- Step 2 -->
+        <div class="reveal text-center relative">
+          <div class="w-20 h-20 bg-cream border border-ink/15 rounded-full flex items-center justify-center mx-auto mb-6 font-display italic text-2xl text-gold relative z-10">02</div>
+          <h4 class="font-display text-xl font-normal text-ink mb-3">Visita técnica</h4>
+          <p class="text-sm text-ink/65 leading-relaxed max-w-[220px] mx-auto">Deslocação sem custo para medições, verificação de tubagens e levantamento fotográfico.</p>
+        </div>
+        <!-- Step 3 -->
+        <div class="reveal text-center relative">
+          <div class="w-20 h-20 bg-cream border border-ink/15 rounded-full flex items-center justify-center mx-auto mb-6 font-display italic text-2xl text-gold relative z-10">03</div>
+          <h4 class="font-display text-xl font-normal text-ink mb-3">Proposta detalhada</h4>
+          <p class="text-sm text-ink/65 leading-relaxed max-w-[220px] mx-auto">Orçamento escrito, mapa de materiais, prazo e cronograma de execução — sem zonas cinzentas.</p>
+        </div>
+        <!-- Step 4 -->
+        <div class="reveal text-center relative">
+          <div class="w-20 h-20 bg-ink text-cream rounded-full flex items-center justify-center mx-auto mb-6 font-display italic text-2xl relative z-10">04</div>
+          <h4 class="font-display text-xl font-normal text-ink mb-3">Execução</h4>
+          <p class="text-sm text-ink/65 leading-relaxed max-w-[220px] mx-auto">Obra com equipa dedicada, fotografias de progresso semanais e encarregado sempre contactável.</p>
+        </div>
+        <!-- Step 5 -->
+        <div class="reveal text-center relative">
+          <div class="w-20 h-20 bg-gold text-white rounded-full flex items-center justify-center mx-auto mb-6 font-display italic text-2xl relative z-10">05</div>
+          <h4 class="font-display text-xl font-normal text-ink mb-3">Entrega</h4>
+          <p class="text-sm text-ink/65 leading-relaxed max-w-[220px] mx-auto">Limpeza pós-obra, inspecção conjunta, manual de utilização e garantia escrita de 2 anos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= GARANTIAS / DIFERENCIAIS ============================= -->
+<section class="py-28 md:py-36 bg-cream">
+  <div class="max-w-[1400px] mx-auto px-6 lg:px-10">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-px bg-ink/10 border border-ink/10">
+      <div class="reveal bg-cream p-10 md:p-12">
+        <div class="w-12 h-12 border border-ink/20 flex items-center justify-center mb-8 text-ink">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M20.38 8.57 12 3 3.62 8.57V15l8.38 6 8.38-6z"/><path d="M9 11.5 11 13.5l4-4"/></svg>
+        </div>
+        <h3 class="font-display text-2xl font-normal mb-4">Garantia escrita</h3>
+        <p class="text-ink/70 leading-relaxed mb-6">Dois anos em canalização e um ano em acabamentos, contratualizados em documento entregue com a chave.</p>
+        <span class="eyebrow text-gold-dark">01 · Confiança</span>
+      </div>
+      <div class="reveal bg-cream p-10 md:p-12">
+        <div class="w-12 h-12 border border-ink/20 flex items-center justify-center mb-8 text-ink">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        </div>
+        <h3 class="font-display text-2xl font-normal mb-4">Prazos cumpridos</h3>
+        <p class="text-ink/70 leading-relaxed mb-6">Cronograma validado antes do início da obra. Cada dia de atraso imputável é compensado no preço final.</p>
+        <span class="eyebrow text-gold-dark">02 · Disciplina</span>
+      </div>
+      <div class="reveal bg-cream p-10 md:p-12">
+        <div class="w-12 h-12 border border-ink/20 flex items-center justify-center mb-8 text-ink">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+        </div>
+        <h3 class="font-display text-2xl font-normal mb-4">Materiais certificados</h3>
+        <p class="text-ink/70 leading-relaxed mb-6">Trabalhamos com Roca, Sanindusa, Geberit, Jung, Uponor e Grohe. Factura de materiais anexa ao orçamento.</p>
+        <span class="eyebrow text-gold-dark">03 · Origem</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= TESTEMUNHOS ============================= -->
+<section class="py-28 md:py-36 bg-ink text-cream relative overflow-hidden">
+  <div class="noise"></div>
+  <div class="max-w-[1400px] mx-auto px-6 lg:px-10 relative">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      <div class="lg:col-span-4">
+        <div class="reveal flex items-center gap-3 mb-8">
+          <span class="dot"></span>
+          <span class="eyebrow text-gold">O que dizem</span>
+        </div>
+        <h2 class="reveal font-display font-light text-4xl lg:text-[3.2rem] leading-[1.05] tracking-tighter2 mb-8">
+          Clientes que <span class="italic font-normal">voltam</span>.
+        </h2>
+        <p class="reveal text-cream/70 leading-relaxed mb-10 max-w-md">
+          A maior parte dos nossos clientes chega por indicação de quem já viveu o processo connosco. É o elogio mais valioso que uma empresa de obras pode receber.
+        </p>
+        <div class="reveal flex items-center gap-6 pt-6 border-t border-cream/10">
+          <div>
+            <div class="font-display text-4xl font-light">4.9<span class="text-gold">/5</span></div>
+            <div class="eyebrow text-cream/60 mt-2">Avaliação média</div>
+          </div>
+          <div>
+            <div class="font-display text-4xl font-light">96%</div>
+            <div class="eyebrow text-cream/60 mt-2">Clientes por referência</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-8 grid md:grid-cols-2 gap-4 md:gap-6">
+        <blockquote class="reveal bg-cream/5 p-8 md:p-10 border border-cream/10">
+          <div class="text-gold mb-6 flex gap-1">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+          </div>
+          <p class="font-display italic text-xl md:text-[1.35rem] font-light leading-snug mb-8">
+            “Remodelaram duas casas de banho em três semanas. Prazo ao minuto, obra impecável e preço igual ao proposto. Fiquei sem desculpa para adiar a cozinha.”
+          </p>
+          <footer class="flex items-center justify-between pt-6 border-t border-cream/10">
+            <div>
+              <div class="font-semibold text-cream text-sm">Maria C.</div>
+              <div class="eyebrow text-cream/50 mt-1">Restelo · Lisboa</div>
+            </div>
+            <div class="eyebrow text-gold">Obra 2024</div>
+          </footer>
+        </blockquote>
+
+        <blockquote class="reveal bg-cream/5 p-8 md:p-10 border border-cream/10 md:mt-10">
+          <div class="text-gold mb-6 flex gap-1">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+          </div>
+          <p class="font-display italic text-xl md:text-[1.35rem] font-light leading-snug mb-8">
+            “A parte técnica foi o que me convenceu — fizeram teste de pressão, mostraram fotografias por baixo do soalho e entregaram relatório. Zero amadorismo.”
+          </p>
+          <footer class="flex items-center justify-between pt-6 border-t border-cream/10">
+            <div>
+              <div class="font-semibold text-cream text-sm">João P.</div>
+              <div class="eyebrow text-cream/50 mt-1">Cascais</div>
+            </div>
+            <div class="eyebrow text-gold">Obra 2024</div>
+          </footer>
+        </blockquote>
+
+        <blockquote class="reveal bg-cream/5 p-8 md:p-10 border border-cream/10">
+          <div class="text-gold mb-6 flex gap-1">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+          </div>
+          <p class="font-display italic text-xl md:text-[1.35rem] font-light leading-snug mb-8">
+            “Foi a terceira empresa que orçamentou — e a única que percebeu o que eu queria à primeira. Casa de banho pequena transformada num mini-spa.”
+          </p>
+          <footer class="flex items-center justify-between pt-6 border-t border-cream/10">
+            <div>
+              <div class="font-semibold text-cream text-sm">Ana S.</div>
+              <div class="eyebrow text-cream/50 mt-1">Ericeira · Mafra</div>
+            </div>
+            <div class="eyebrow text-gold">Obra 2023</div>
+          </footer>
+        </blockquote>
+
+        <blockquote class="reveal bg-cream/5 p-8 md:p-10 border border-cream/10 md:mt-10">
+          <div class="text-gold mb-6 flex gap-1">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+          </div>
+          <p class="font-display italic text-xl md:text-[1.35rem] font-light leading-snug mb-8">
+            “Substituição total das colunas de água do prédio. Zero ruído para os vizinhos, zero pó em casa. Nem parece que houve obra.”
+          </p>
+          <footer class="flex items-center justify-between pt-6 border-t border-cream/10">
+            <div>
+              <div class="font-semibold text-cream text-sm">Rui T.</div>
+              <div class="eyebrow text-cream/50 mt-1">Algés · Oeiras</div>
+            </div>
+            <div class="eyebrow text-gold">Obra 2023</div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= ZONA DE ATUAÇÃO ============================= -->
+<section id="zona" class="py-28 md:py-36 bg-cream">
+  <div class="max-w-[1400px] mx-auto px-6 lg:px-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+      <div>
+        <div class="reveal flex items-center gap-3 mb-8">
+          <span class="dot"></span>
+          <span class="eyebrow text-ink/60">Zona de actuação</span>
+        </div>
+        <h2 class="reveal font-display font-light text-4xl md:text-5xl lg:text-[3.3rem] leading-[1.05] tracking-tighter2 mb-8">
+          Estamos <span class="italic font-normal">perto</span>.<br/>
+          Onde a sua obra estiver.
+        </h2>
+        <p class="reveal text-ink/70 text-[1.02rem] leading-relaxed mb-10 max-w-lg">
+          Cobrimos toda a Grande Lisboa, linha de Cascais e zona oeste — deslocações incluídas para orçamento e primeira visita técnica.
+        </p>
+        <div class="reveal grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-4 max-w-xl">
+          <div class="flex items-center gap-2 text-ink"><span class="w-1 h-1 bg-gold rounded-full"></span>Lisboa</div>
+          <div class="flex items-center gap-2 text-ink"><span class="w-1 h-1 bg-gold rounded-full"></span>Cascais</div>
+          <div class="flex items-center gap-2 text-ink"><span class="w-1 h-1 bg-gold rounded-full"></span>Estoril</div>
+          <div class="flex items-center gap-2 text-ink"><span class="w-1 h-1 bg-gold rounded-full"></span>Mafra</div>
+          <div class="flex items-center gap-2 text-ink"><span class="w-1 h-1 bg-gold rounded-full"></span>Ericeira</div>
+          <div class="flex items-center gap-2 text-ink"><span class="w-1 h-1 bg-gold rounded-full"></span>Oeiras</div>
+          <div class="flex items-center gap-2 text-ink"><span class="w-1 h-1 bg-gold rounded-full"></span>Sintra</div>
+          <div class="flex items-center gap-2 text-ink"><span class="w-1 h-1 bg-gold rounded-full"></span>Algés</div>
+          <div class="flex items-center gap-2 text-ink"><span class="w-1 h-1 bg-gold rounded-full"></span>Parede</div>
+          <div class="flex items-center gap-2 text-ink"><span class="w-1 h-1 bg-gold rounded-full"></span>Carcavelos</div>
+          <div class="flex items-center gap-2 text-ink"><span class="w-1 h-1 bg-gold rounded-full"></span>Amadora</div>
+          <div class="flex items-center gap-2 text-ink"><span class="w-1 h-1 bg-gold rounded-full"></span>Odivelas</div>
+        </div>
+      </div>
+
+      <div class="reveal relative aspect-square max-w-xl mx-auto w-full">
+        <!-- Map replacement — decorative stylized -->
+        <div class="absolute inset-0 bg-ink overflow-hidden">
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-9.65%2C38.55%2C-9.00%2C39.00&amp;layer=mapnik&amp;marker=38.75%2C-9.20"
+            class="w-full h-full border-0 grayscale contrast-125 opacity-90"
+            loading="lazy"
+            title="Zona de actuação — Grande Lisboa">
+          </iframe>
+          <div class="absolute inset-0 bg-gradient-to-tr from-ink/30 via-transparent to-gold/10 pointer-events-none"></div>
+        </div>
+        <!-- Frame accent -->
+        <div class="absolute -top-4 -left-4 w-16 h-16 border-t-2 border-l-2 border-gold"></div>
+        <div class="absolute -bottom-4 -right-4 w-16 h-16 border-b-2 border-r-2 border-gold"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= FAQ ============================= -->
+<section class="py-28 md:py-36 bg-cream-2">
+  <div class="max-w-4xl mx-auto px-6 lg:px-10">
+    <div class="text-center mb-16">
+      <div class="reveal flex items-center gap-3 mb-8 justify-center">
+        <span class="dot"></span>
+        <span class="eyebrow text-ink/60">Perguntas frequentes</span>
+      </div>
+      <h2 class="reveal font-display font-light text-4xl md:text-5xl lg:text-[3.3rem] leading-[1.05] tracking-tighter2">
+        Antes de pedir orçamento.
+      </h2>
+    </div>
+
+    <div class="divide-y divide-ink/10">
+      <details class="group py-6 reveal">
+        <summary class="flex items-center justify-between gap-6">
+          <h3 class="font-display text-xl md:text-[1.35rem] font-normal text-ink">Quanto custa remodelar uma casa de banho em Lisboa?</h3>
+          <span class="chev text-ink text-2xl flex-shrink-0">+</span>
+        </summary>
+        <div class="pt-4 text-ink/70 leading-relaxed max-w-2xl">O valor depende da área, do estado das tubagens e do nível de acabamento escolhido. Uma casa de banho completa com substituição de canalização, revestimentos cerâmicos e loiças de gama média situa-se tipicamente entre 6.500€ e 14.000€. Acabamentos premium (mármore, microcimento, vidros temperados) podem aumentar o orçamento para a gama de 15.000€ a 25.000€.</div>
+      </details>
+      <details class="group py-6 reveal">
+        <summary class="flex items-center justify-between gap-6">
+          <h3 class="font-display text-xl md:text-[1.35rem] font-normal text-ink">Quanto tempo demora a obra?</h3>
+          <span class="chev text-ink text-2xl flex-shrink-0">+</span>
+        </summary>
+        <div class="pt-4 text-ink/70 leading-relaxed max-w-2xl">Uma casa de banho de serviço (até 4 m²) executa-se em 8 a 12 dias úteis. Uma suite completa (6 a 10 m²) demora, em média, 15 a 25 dias úteis, dependendo da complexidade de canalização e do prazo de entrega dos materiais escolhidos.</div>
+      </details>
+      <details class="group py-6 reveal">
+        <summary class="flex items-center justify-between gap-6">
+          <h3 class="font-display text-xl md:text-[1.35rem] font-normal text-ink">Tratam da licença de obra?</h3>
+          <span class="chev text-ink text-2xl flex-shrink-0">+</span>
+        </summary>
+        <div class="pt-4 text-ink/70 leading-relaxed max-w-2xl">Em obras de remodelação interior a maior parte dos casos não requer licença camarária — é obra isenta ou comunicação prévia. Tratamos nós dessa comunicação quando necessário e articulamos com o condomínio para gestão de horários e uso de elevadores.</div>
+      </details>
+      <details class="group py-6 reveal">
+        <summary class="flex items-center justify-between gap-6">
+          <h3 class="font-display text-xl md:text-[1.35rem] font-normal text-ink">Posso escolher os materiais ou têm fornecedores fixos?</h3>
+          <span class="chev text-ink text-2xl flex-shrink-0">+</span>
+        </summary>
+        <div class="pt-4 text-ink/70 leading-relaxed max-w-2xl">Ambos. Pode escolher tudo (entregamos guia de compras), deixar-nos escolher tudo (apresentamos 2 ou 3 propostas de moodboard), ou combinar. Trabalhamos com as melhores casas de cerâmica, loiça sanitária e torneiras do mercado nacional.</div>
+      </details>
+      <details class="group py-6 reveal">
+        <summary class="flex items-center justify-between gap-6">
+          <h3 class="font-display text-xl md:text-[1.35rem] font-normal text-ink">Passam factura? Há IVA 6%?</h3>
+          <span class="chev text-ink text-2xl flex-shrink-0">+</span>
+        </summary>
+        <div class="pt-4 text-ink/70 leading-relaxed max-w-2xl">Sim, toda a obra é facturada. Em imóveis habitacionais com mais de 30 anos ou em zonas de reabilitação urbana aplica-se IVA reduzido a 6% — validamos a elegibilidade fiscal antes de emitir a factura final.</div>
+      </details>
+      <details class="group py-6 reveal">
+        <summary class="flex items-center justify-between gap-6">
+          <h3 class="font-display text-xl md:text-[1.35rem] font-normal text-ink">Dão garantia?</h3>
+          <span class="chev text-ink text-2xl flex-shrink-0">+</span>
+        </summary>
+        <div class="pt-4 text-ink/70 leading-relaxed max-w-2xl">Sim — 2 anos em canalização e sistemas de água, 1 ano em acabamentos e mão-de-obra. Garantia entregue por escrito no acto da entrega da obra, com detalhe do que cobre e do procedimento de accionamento.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= CTA / CONTACTO ============================= -->
+<section id="contacto" class="py-28 md:py-36 bg-ink text-cream relative overflow-hidden">
+  <div class="noise"></div>
+  <div class="max-w-[1400px] mx-auto px-6 lg:px-10 relative">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-14">
+
+      <div class="lg:col-span-5">
+        <div class="reveal flex items-center gap-3 mb-8">
+          <span class="dot"></span>
+          <span class="eyebrow text-gold">Começar o projecto</span>
+        </div>
+        <h2 class="reveal font-display font-light text-4xl md:text-5xl lg:text-[3.6rem] leading-[1.02] tracking-tighter2 mb-10">
+          Orçamento<br/>
+          <span class="italic font-normal">em 24 horas.</span>
+        </h2>
+        <p class="reveal text-cream/75 text-[1.05rem] leading-relaxed mb-14 max-w-md">
+          Conte-nos onde está a obra e o que imagina. Respondemos no próprio dia com uma primeira estimativa e data para visita técnica gratuita.
+        </p>
+
+        <div class="reveal space-y-7">
+          <a href="tel:+351912345678" class="flex items-start gap-5 group">
+            <div class="w-11 h-11 border border-cream/20 flex items-center justify-center flex-shrink-0 group-hover:bg-gold group-hover:border-gold transition-all">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="eyebrow text-cream/50 mb-1">Telefone</div>
+              <div class="font-display text-xl md:text-2xl font-light">+351 912 345 678</div>
+            </div>
+          </a>
+          <a href="mailto:geral@ponteseperiferias.pt" class="flex items-start gap-5 group">
+            <div class="w-11 h-11 border border-cream/20 flex items-center justify-center flex-shrink-0 group-hover:bg-gold group-hover:border-gold transition-all">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="1"/><path d="m22 7-10 6L2 7"/></svg>
+            </div>
+            <div>
+              <div class="eyebrow text-cream/50 mb-1">E-mail</div>
+              <div class="font-display text-xl md:text-2xl font-light">geral@ponteseperiferias.pt</div>
+            </div>
+          </a>
+          <a href="https://wa.me/351912345678?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20um%20or%C3%A7amento%20de%20remodela%C3%A7%C3%A3o%20de%20casa%20de%20banho." target="_blank" rel="noopener" class="flex items-start gap-5 group">
+            <div class="w-11 h-11 border border-cream/20 flex items-center justify-center flex-shrink-0 group-hover:bg-[#25D366] group-hover:border-[#25D366] transition-all">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15s-.77.97-.95 1.17c-.17.2-.35.22-.65.07-.3-.15-1.26-.47-2.4-1.49-.89-.8-1.49-1.78-1.66-2.08-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37s-1.04 1.01-1.04 2.47 1.06 2.87 1.21 3.07c.15.2 2.09 3.2 5.06 4.49.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35zM12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2z"/></svg>
+            </div>
+            <div>
+              <div class="eyebrow text-cream/50 mb-1">WhatsApp</div>
+              <div class="font-display text-xl md:text-2xl font-light">Resposta imediata</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="lg:col-span-7">
+        <form id="orcamentoForm" class="reveal bg-cream text-ink p-8 md:p-12 rounded-[2px]" onsubmit="return enviarWhatsApp(event)">
+          <div class="mb-8">
+            <h3 class="font-display text-2xl md:text-[1.8rem] font-normal mb-2">Pedido de orçamento</h3>
+            <p class="text-sm text-ink/60">Preencha os campos abaixo. O envio abre uma conversa de WhatsApp com o seu pedido formatado.</p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-5 mb-5">
+            <label class="block">
+              <span class="fld-lbl">Nome</span>
+              <input required type="text" name="nome" class="fld" placeholder="O seu nome" />
+            </label>
+            <label class="block">
+              <span class="fld-lbl">Telemóvel</span>
+              <input required type="tel" name="telefone" class="fld" placeholder="+351 ..." />
+            </label>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-5 mb-5">
+            <label class="block">
+              <span class="fld-lbl">E-mail</span>
+              <input type="email" name="email" class="fld" placeholder="email@dominio.pt" />
+            </label>
+            <label class="block">
+              <span class="fld-lbl">Localidade</span>
+              <input required type="text" name="local" class="fld" placeholder="Lisboa, Cascais, Mafra..." />
+            </label>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-5 mb-5">
+            <label class="block">
+              <span class="fld-lbl">Tipo de obra</span>
+              <select name="tipo" class="fld" required>
+                <option value="">Seleccionar...</option>
+                <option>Remodelação integral de casa de banho</option>
+                <option>Substituição de canalização</option>
+                <option>Bases de duche &amp; resguardos</option>
+                <option>Revestimentos e loiças</option>
+                <option>Casa de banho de serviço</option>
+                <option>Outro / aconselhamento</option>
+              </select>
+            </label>
+            <label class="block">
+              <span class="fld-lbl">Área aproximada (m²)</span>
+              <input type="text" name="area" class="fld" placeholder="Ex: 6 m²" />
+            </label>
+          </div>
+
+          <label class="block mb-6">
+            <span class="fld-lbl">O que gostaria de fazer?</span>
+            <textarea name="mensagem" rows="4" class="fld resize-none" placeholder="Descreva brevemente o projecto, prazo desejado ou materiais preferidos..."></textarea>
+          </label>
+
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <p class="text-xs text-ink/50 max-w-xs">Ao enviar concorda que podemos contactá-lo para prestar um orçamento. Dados tratados ao abrigo do RGPD.</p>
+            <button type="submit" class="btn btn-primary text-[0.95rem] w-full sm:w-auto">
+              Enviar pedido
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= FOOTER ============================= -->
+<footer class="bg-ink-dark text-cream/70 py-16 relative">
+  <div class="max-w-[1400px] mx-auto px-6 lg:px-10">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 pb-12 border-b border-cream/10">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="w-10 h-10 bg-gold text-cream font-display italic text-xl font-semibold flex items-center justify-center rounded-sm">P</span>
+          <span class="leading-none">
+            <span class="block font-display text-[1.1rem] font-semibold tracking-tight text-cream">Pontes <span class="italic font-light">&amp;</span> Periferias LDA</span>
+            <span class="block text-[0.66rem] uppercase tracking-[0.22em] text-cream/50 mt-1">Remodelação · Canalização</span>
+          </span>
+        </div>
+        <p class="max-w-md text-[0.95rem] leading-relaxed text-cream/55 mb-6">
+          Empresa portuguesa especializada em remodelação premium de casas de banho e canalização técnica. Grande Lisboa, Cascais, Mafra e arredores.
+        </p>
+        <p class="text-xs text-cream/40">NIPC 500 000 000 · Alvará de construção actualizado</p>
+      </div>
+      <div>
+        <h5 class="eyebrow text-cream/40 mb-5">Navegação</h5>
+        <ul class="space-y-3 text-sm">
+          <li><a href="#servicos" class="link-u hover:text-cream">Serviços</a></li>
+          <li><a href="#portfolio" class="link-u hover:text-cream">Portfólio</a></li>
+          <li><a href="#processo" class="link-u hover:text-cream">Processo</a></li>
+          <li><a href="#zona" class="link-u hover:text-cream">Zona de actuação</a></li>
+          <li><a href="#contacto" class="link-u hover:text-cream">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="eyebrow text-cream/40 mb-5">Contacto</h5>
+        <ul class="space-y-3 text-sm">
+          <li><a href="tel:+351912345678" class="link-u hover:text-cream">+351 912 345 678</a></li>
+          <li><a href="mailto:geral@ponteseperiferias.pt" class="link-u hover:text-cream break-all">geral@ponteseperiferias.pt</a></li>
+          <li class="text-cream/55">Seg — Sáb · 08:30 — 19:00</li>
+          <li class="text-cream/55">Lisboa, Portugal</li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row justify-between gap-4 pt-10 text-xs text-cream/40">
+      <div>© 2024 Pontes e Periferias LDA. Todos os direitos reservados.</div>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-cream transition">Privacidade</a>
+        <a href="#" class="hover:text-cream transition">Termos</a>
+        <a href="#" class="hover:text-cream transition">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================= FLOATING WHATSAPP ============================= -->
+<a href="https://wa.me/351912345678?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20um%20or%C3%A7amento%20de%20remodela%C3%A7%C3%A3o%20de%20casa%20de%20banho." target="_blank" rel="noopener"
+   class="fixed bottom-6 right-6 z-40 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-[0_18px_40px_-10px_rgba(37,211,102,0.6)] hover:scale-105 transition-transform pulsering"
+   aria-label="Falar via WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15s-.77.97-.95 1.17c-.17.2-.35.22-.65.07-.3-.15-1.26-.47-2.4-1.49-.89-.8-1.49-1.78-1.66-2.08-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37s-1.04 1.01-1.04 2.47 1.06 2.87 1.21 3.07c.15.2 2.09 3.2 5.06 4.49.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35zM12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.03-.2-.31a8.18 8.18 0 0 1-1.26-4.39c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.17 8.17 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.25 8.24z"/></svg>
+</a>
+
+<!-- ============================= SCRIPTS ============================= -->
+<script>
+  // ============= Mobile menu =============
+  const mb = document.getElementById('menuBtn');
+  const mm = document.getElementById('mobileMenu');
+  if (mb && mm) {
+    mb.addEventListener('click', () => mm.classList.toggle('hidden'));
+    mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mm.classList.add('hidden')));
+  }
+
+  // ============= Form -> WhatsApp =============
+  function enviarWhatsApp(ev) {
+    ev.preventDefault();
+    const f = ev.target;
+    const d = Object.fromEntries(new FormData(f).entries());
+    const msg = `Olá, gostaria de pedir um orçamento.\n\n` +
+      `• Nome: ${d.nome || '-'}\n` +
+      `• Telefone: ${d.telefone || '-'}\n` +
+      `• E-mail: ${d.email || '-'}\n` +
+      `• Localidade: ${d.local || '-'}\n` +
+      `• Tipo de obra: ${d.tipo || '-'}\n` +
+      `• Área aproximada: ${d.area || '-'}\n\n` +
+      `Detalhes:\n${d.mensagem || '-'}`;
+    const url = `https://wa.me/351912345678?text=${encodeURIComponent(msg)}`;
+    window.open(url, '_blank');
+    return false;
+  }
+
+  // ============= GSAP animations =============
+  if (window.gsap) {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Page entry
+    gsap.fromTo('nav#nav', { y: -20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: 'power3.out', delay: 0.1 });
+
+    // Reveal on scroll
+    gsap.utils.toArray('.reveal').forEach(el => {
+      gsap.fromTo(el,
+        { opacity: 0, y: 30 },
+        {
+          opacity: 1, y: 0, duration: 1, ease: 'power3.out',
+          scrollTrigger: { trigger: el, start: 'top 85%' }
+        }
+      );
+    });
+
+    // Staggered groups
+    gsap.utils.toArray('.reveal-stagger').forEach(group => {
+      const children = group.children;
+      gsap.fromTo(children,
+        { opacity: 0, y: 40 },
+        {
+          opacity: 1, y: 0, duration: 0.9, ease: 'power3.out', stagger: 0.08,
+          scrollTrigger: { trigger: group, start: 'top 80%' }
+        }
+      );
+    });
+
+    // Parallax hero images
+    gsap.utils.toArray('.parallax-img').forEach(img => {
+      gsap.to(img, {
+        yPercent: -8,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: img.closest('section') || img,
+          start: 'top bottom',
+          end: 'bottom top',
+          scrub: 0.8
+        }
+      });
+    });
+
+    // Counter animation
+    gsap.utils.toArray('[data-count]').forEach(el => {
+      const target = parseInt(el.dataset.count, 10);
+      const obj = { n: 0 };
+      ScrollTrigger.create({
+        trigger: el,
+        start: 'top 85%',
+        once: true,
+        onEnter: () => {
+          gsap.to(obj, {
+            n: target,
+            duration: 2,
+            ease: 'power2.out',
+            onUpdate: () => { el.textContent = Math.round(obj.n) + (target >= 300 ? '+' : ''); }
+          });
+        }
+      });
+    });
+
+    // Nav shrink on scroll
+    const nav = document.getElementById('nav');
+    ScrollTrigger.create({
+      start: 'top -60',
+      onEnter: () => nav.classList.add('shadow-[0_8px_30px_-10px_rgba(11,42,47,0.15)]'),
+      onLeaveBack: () => nav.classList.remove('shadow-[0_8px_30px_-10px_rgba(11,42,47,0.15)]')
+    });
+  }
+</script>
+
+</body>
+</html>
