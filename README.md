@@ -2,28 +2,17 @@
 
 Site premium da empresa **Pontes e Periferias LDA** — remodelação de casas de banho e canalização técnica em Grande Lisboa, Cascais, Mafra e arredores.
 
+🌐 **Site ao vivo:** https://highlevelvnc.github.io/pontesep/
+
 ## Estrutura
 
 ```
 .
-├── site/               # Site final (HTML + imagens)
-│   ├── index.html
-│   └── images/
+├── index.html          # Site principal
+├── images/             # Imagens curadas do site
 ├── public/             # Fotos originais das obras
 └── stitch_.../         # Base original do Stitch
 ```
-
-## Ver o site
-
-Abrir [site/index.html](site/index.html) num navegador.
-
-### GitHub Pages
-
-Para publicar via GitHub Pages:
-
-1. **Settings → Pages**
-2. **Source:** `main` branch · pasta `/site`
-3. O site ficará em `https://highlevelvnc.github.io/pontesep/`
 
 ## Tecnologia
 
